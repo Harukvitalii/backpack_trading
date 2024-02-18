@@ -1,0 +1,12 @@
+13:44:51.93 INFO | core.autoreger:start:27 | Successfully grabbed 1 accounts
+13:44:51.93 INFO | core.autoreger:custom_delay:58 | Sleep for 2.0 seconds
+13:44:55.52 ERROR | core.backpack_trade:start_trading:73 | '>' not supported between instances of 'int' and 'str'
+13:44:55.52 INFO | core.backpack_trade:start_trading:75 | Finished! Traded volume ~ 0.00$
+13:44:55.52 SUCCESS | core.autoreger:logs:75 | Account: qMi587oozXnp8Gd... Claimed!
+13:44:55.52 SUCCESS | core.autoreger:start:33 | Successfully handled 1 accounts :)
+13:46:55.53 INFO | core.autoreger:start:27 | Successfully grabbed 1 accounts
+13:46:55.53 INFO | core.autoreger:custom_delay:58 | Sleep for 1.8 seconds
+13:46:58.96 INFO | core.backpack_trade:start_trading:71 | Not enough funds to trade. Min Balance Stopped. Current balance ~ 1.4667677629807483$
+13:46:58.96 INFO | core.backpack_trade:start_trading:75 | Finished! Traded volume ~ 1.47$
+13:46:58.96 SUCCESS | core.autoreger:logs:75 | Account: qMi587oozXnp8Gd... Claimed!
+13:46:58.96 SUCCESS | core.autoreger:start:33 | Successfully handled 1 accounts :)
