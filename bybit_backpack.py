@@ -88,8 +88,8 @@ class FuturesArbitrage:
                             
                         
                         profit = self.calculate_proift_percentage(1/backpack_prices[symbol1][symbol0], cex_prices[symbol0]['USDT'])
-                        profit_percent = profit*100
-                        if profit_percent > 0.01:
+                        profit_percent = profit
+                        if profit_percent > 0.005:
                         
                             text = f'Arbitrage found for {symbol} with profit of {profit_percent:.4f}, buy: {1/backpack_prices[symbol1][symbol0]}, sell: {cex_prices[symbol0]['USDT']}'
 
