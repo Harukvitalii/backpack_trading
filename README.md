@@ -7,7 +7,7 @@ Discover the latest `<crypto/>` moves in my Telegram Channel:
 
 Bot used to create find good positions on the [Backpack exchange](https://backpack.exchange/refer/binance)
 
-Created with help of Web3 Enjoyer library backpack-api ([Channel](https://t.me/+ZiA71w9HAfA5ODEy))
+Created with help of Web3 Enjoyer library backpack-api ([Channel](https://t.me/web3_enjoyer_club))
 ## Quick Start 📚
    1. To install libraries `pip install -r requirements.txt`.
    2. To start bot use `python bybit_backpack.py`.
