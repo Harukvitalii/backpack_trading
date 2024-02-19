@@ -28,8 +28,7 @@ BACKPACK_SECRET = ''
 
 1. Api keys configuration.🔒
 
-   You have to put [api key and secret key](https://backpack.exchange/settings/api-keys) with ':' (api_key:secret_key) into `accounts.txt` 
-   
-   ![image](https://github.com/MsLolita/pybackpack/assets/58307006/910e8383-c7cc-4336-8829-69ad5fe24996)
+   You have to put [api key and secret key](https://backpack.exchange/settings/api-keys) into `.env` 
+
 
 2. You can add automatic order open on both exchanges, you will need to specify cex exchange and rename symbols add :USDT
