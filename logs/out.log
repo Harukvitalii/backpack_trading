@@ -10,3 +10,18 @@
 13:46:58.96 INFO | core.backpack_trade:start_trading:75 | Finished! Traded volume ~ 1.47$
 13:46:58.96 SUCCESS | core.autoreger:logs:75 | Account: qMi587oozXnp8Gd... Claimed!
 13:46:58.96 SUCCESS | core.autoreger:start:33 | Successfully handled 1 accounts :)
+14:04:11.52 INFO | core.autoreger:start:27 | Successfully grabbed 1 accounts
+14:04:11.52 INFO | core.autoreger:custom_delay:58 | Sleep for 1.8 seconds
+14:04:14.95 INFO | core.backpack_trade:start_trading:71 | Not enough funds to trade. Min Balance Stopped. Current balance ~ 1.1504489463404468$
+14:04:14.95 INFO | core.backpack_trade:start_trading:75 | Finished! Traded volume ~ 1.15$
+14:04:14.95 SUCCESS | core.autoreger:logs:75 | Account: qMi587oozXnp8Gd... Claimed!
+14:04:14.95 SUCCESS | core.autoreger:start:33 | Successfully handled 1 accounts :)
+17:24:25.75 INFO | core.autoreger:start:27 | Successfully grabbed 1 accounts
+17:24:25.75 INFO | core.autoreger:custom_delay:58 | Sleep for 1.3 seconds
+17:24:28.83 DEBUG | core.backpack_trade:trade:133 | Side: buy | Price: 0.5355 | Amount: 6.90 | Response: {"clientId":null,"createdAt":1708269868806,"executedQuantity":"6.9","executedQuoteQuantity":"3.69288","id":"111953174122070017","orderType":"Limit","postOnly":false,"price":"0.5355","quantity":"6.9","selfTradePrevention":"RejectTaker","side":"Bid","status":"Filled","symbol":"JUP_USDC","timeInForce":"GTC","triggerPrice":null}
+17:24:28.83 INFO | core.backpack_trade:trade:137 | Buy 6.90 JUP_USDC. Traded volume: 1.98$
+17:24:28.83 INFO | core.backpack_trade:custom_delay:163 | Sleep for 1.36 seconds
+17:24:30.82 INFO | core.backpack_trade:start_trading:71 | Not enough funds to trade. Min Balance Stopped. Current balance ~ 1.1648598916665696$
+17:24:30.82 INFO | core.backpack_trade:start_trading:75 | Finished! Traded volume ~ 3.14$
+17:24:30.82 SUCCESS | core.autoreger:logs:75 | Account: qMi587oozXnp8Gd... Claimed!
+17:24:30.82 SUCCESS | core.autoreger:start:33 | Successfully handled 1 accounts :)

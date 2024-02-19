@@ -111,14 +111,14 @@ class BackpackTrade(Backpack):
                 self.trade_amount[1] = amount_usd
 
             amount_usd = random.uniform(*self.trade_amount)
-            amount = amount_usd / float(price)
+            amount_trade = amount_usd / float(price)
 
         self.current_volume += amount_usd
 
-        if self.min_balance_to_left > 0 and self.min_balance_to_left >= amount_usd:
+        if self.min_balance_to_left > 0 and self.min_balance_to_left >= float(amount) - amount_usd:
             raise ValueError(f"Not enough funds to trade. Min Balance Stopped. Current balance ~ {amount_usd}$")
 
-        return price, amount
+        return price, amount_trade
 
     @retry(stop=stop_after_attempt(3), wait=wait_random(2, 5), reraise=True,
            retry=retry_if_not_exception_type(ValueError))
@@ -149,6 +149,13 @@ class BackpackTrade(Backpack):
         # print(json.dumps(orderbook, indent=4))
 
         return orderbook['asks'][depth][0] if side == 'buy' else orderbook['bids'][-depth][0]
+
+    async def get_orderbook(self, symbol: str):
+        response = await self.get_order_book_depth(symbol)
+        orderbook = await response.json()
+        # print(json.dumps(orderbook, indent=4))
+
+        return orderbook
 
     async def custom_delay(self):
         if self.delays[1] > 0:
