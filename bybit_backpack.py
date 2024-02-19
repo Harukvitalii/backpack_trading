@@ -88,9 +88,10 @@ class FuturesArbitrage:
                             
                         
                         profit = self.calculate_proift_percentage(1/backpack_prices[symbol1][symbol0], cex_prices[symbol0]['USDT'])
-                        if profit > 0.001:
+                        profit_percent = profit*100
+                        if profit_percent > 0.01:
                         
-                            text = f'Arbitrage found for {symbol} with profit of {profit}, buy: {1/backpack_prices[symbol1][symbol0]}, sell: {cex_prices[symbol0]['USDT']}'
+                            text = f'Arbitrage found for {symbol} with profit of {profit_percent:.4f}, buy: {1/backpack_prices[symbol1][symbol0]}, sell: {cex_prices[symbol0]['USDT']}'
 
                             url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHAT_ID}&text={text}'
                             response = requests.get(url)
@@ -98,7 +99,7 @@ class FuturesArbitrage:
                                 print('Повідомлення успішно відправлено!')
                             else:
                                 print('Виникла помилка при відправці повідомлення:', response.status_code)
-                            print(f'Arbitrage found for {symbol} with profit of {profit}, buy: {1/backpack_prices[symbol1][symbol0]}, sell: {cex_prices[symbol0]['USDT']}')
+                            print(f'Arbitrage found for {symbol} with profit of {profit_percent:.4f}, buy: {1/backpack_prices[symbol1][symbol0]}, sell: {cex_prices[symbol0]['USDT']}')
                         else:
                             # print(f'No arbitrage found for {symbol}')
                             pass

@@ -79,7 +79,6 @@ class CEX: # CEXClient
         exchange_spot = self.exchange
         await exchange_spot.load_markets()
         await self.watch_some_orderbooks(exchange_spot, self.tickets)
-        await exchange_spot.close()
 
 
 # asyncio.run(CEX().main())
